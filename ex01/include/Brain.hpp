@@ -5,15 +5,20 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: descamil <descamil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/07 12:16:22 by descamil          #+#    #+#             */
-/*   Updated: 2025/05/07 12:47:10 by descamil         ###   ########.fr       */
+/*   Created: 2025/05/08 19:02:55 by descamil          #+#    #+#             */
+/*   Updated: 2025/05/09 17:43:33 by descamil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#ifndef BRAIN_HPP
+# define BRAIN_HPP
+
+# include "Animal.hpp"
 
 class Brain
 {
-    std::string ideas[100];
-    
+    public:
+        std::string ideas[100];
 };
+
+#endif
