@@ -6,15 +6,32 @@
 /*   By: descamil <descamil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 19:50:46 by descamil          #+#    #+#             */
-/*   Updated: 2025/05/02 20:56:06 by descamil         ###   ########.fr       */
+/*   Updated: 2025/05/09 17:37:34 by descamil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/Animal.hpp"
 
-Animal::Animal() { std::cout << "Animal created" << std::endl; }
+Animal::Animal()
+{
+	std::cout << "Animal created" << std::endl;
+}
 
-Animal::~Animal() {	std::cout << "Animal destroyed" << std::endl; }
+Animal::~Animal()
+{
+	std::cout << "Animal destroyed" << std::endl;
+}
+
+Animal::Animal(const Animal &copy)
+{
+	*this = copy;
+}
+Animal &Animal::operator=(const Animal &copy)
+{
+	if (this != &copy)
+		type = copy.type;
+	return (*this);
+}
 
 void	Animal::makeSound() const
 {
