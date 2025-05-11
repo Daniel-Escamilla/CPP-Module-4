@@ -10,7 +10,6 @@ SRC = \
     src/Character.cpp \
     src/MateriaSource.cpp \
 
-
 OBJS = $(notdir $(SRC:.cpp=.o))
 OBJDIR = Materia_objects
 

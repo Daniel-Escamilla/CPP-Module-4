@@ -7,7 +7,6 @@ SRC =	src/main.cpp \
 		src/Dog.cpp \
 		src/Cat.cpp \
 
-
 OBJS = $(notdir $(SRC:.cpp=.o))
 OBJDIR = Animal_objects
 
