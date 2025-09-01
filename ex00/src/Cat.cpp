@@ -6,7 +6,7 @@
 /*   By: descamil <descamil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 20:56:12 by descamil          #+#    #+#             */
-/*   Updated: 2025/05/08 19:00:32 by descamil         ###   ########.fr       */
+/*   Updated: 2025/09/01 10:37:56 by descamil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@ Cat::~Cat()
 }
 
 Cat::Cat(const Cat &copy)
+	: Animal(copy)
 {
 	std::cout << "Cat copy constructor called" << std::endl;
-	*this = copy;
 }
 
 Cat &Cat::operator=(const Cat &copy)

@@ -6,7 +6,7 @@
 /*   By: descamil <descamil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 20:55:25 by descamil          #+#    #+#             */
-/*   Updated: 2025/05/08 18:58:35 by descamil         ###   ########.fr       */
+/*   Updated: 2025/09/01 10:38:10 by descamil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@ Dog::~Dog()
 }
 
 Dog::Dog(const Dog &copy)
+	: Animal(copy)
 {
 	std::cout << "Dog copy constructor called" << std::endl;
-	*this = copy;
 }
 
 Dog &Dog::operator=(const Dog &copy)
