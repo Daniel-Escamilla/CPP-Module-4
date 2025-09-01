@@ -6,7 +6,7 @@
 /*   By: descamil <descamil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/10 19:01:19 by descamil          #+#    #+#             */
-/*   Updated: 2025/05/11 19:01:47 by descamil         ###   ########.fr       */
+/*   Updated: 2025/09/01 10:46:51 by descamil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,8 +83,7 @@ void	Character::equip(AMateria* m)
 	{
 		if (inventory[i] == NULL)
 		{
-			inventory[i] = m->clone();
-			delete m;
+			inventory[i] = m;
 			return ;
 		}
 	}
